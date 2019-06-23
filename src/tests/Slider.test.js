@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Slider from '../components/Slider';
 const ReactTestRenderer = require('react-test-renderer');
 
-describe('when rendering the App component', () => {
+describe('when rendering a Slider component', () => {
   it('should render without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(<Slider />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('should match snapshot', () => {
-    const component = ReactTestRenderer.create(<App />);
+    const component = ReactTestRenderer.create(<Slider />);
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });
