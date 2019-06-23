@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import GoogleMap from '../components/GoogleMap';
 const ReactTestRenderer = require('react-test-renderer');
 
-describe('when rendering the App component', () => {
-  it('should render without crashing', () => {
+describe('when rendering a GoogleMap component', () => {
+  it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(<GoogleMap />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('should match snapshot', () => {
-    const component = ReactTestRenderer.create(<App />);
+    const component = ReactTestRenderer.create(<GoogleMap />);
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when rendering a Slider component should match snapshot 1`] = `
+<form
+  style={
+    Object {
+      "position": "absolute",
+      "top": "600px",
+    }
+  }
+>
+  <input
+    className="slider"
+    id="carcount"
+    onChange={[Function]}
+    type="range"
+    value={10}
+  />
+  <span>
+    10
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    Update search...
+  </button>
+</form>
+`;
