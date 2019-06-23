@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Special requirements
+
+This app uses an external URL which your browser will not allow without the following:
+Please open with CORS allowed in browser. You can use the following in your terminal:
+
+open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+
+
 ## Available Scripts
 
 In the project directory, you can run:
