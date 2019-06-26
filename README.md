@@ -2,9 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Please clone this repository and then run:
 
-1.npm i
-2.npm run server
-3.npm start
+1. npm i
+2. npm run server
+3. npm start
 
 (note: steps 2 and 3 will require separate terminal shells)
 
