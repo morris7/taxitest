@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Splyt taxi tech test
+
 Please clone this repository and then run:
 
 1. npm i
