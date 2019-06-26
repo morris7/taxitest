@@ -4,6 +4,7 @@ import './App.css';
 import Slider from './components/Slider'
 import GoogleMap from './components/GoogleMap'
 import { Marker } from 'google-maps-react';
+import { localUrl } from './constants';
 
 class App extends Component {
 
@@ -57,7 +58,7 @@ class App extends Component {
   }
 
   fetchCars(count){
-    let url = `https://qa-interview-test.qa.splytech.io/api/drivers?latitude=51.5049375&longitude=-0.0964509&count=${count}`
+    let url = `${localUrl}/drivers?latitude=51.5049375&longitude=-0.0964509&count=${count}`
     fetch(url)
         .then(response => response.json())
         .then(data => {
